@@ -6,7 +6,6 @@ function link_config {
   echo "Need a symbolic link pointing to"
   echo "source_file $1"
   echo "from link_name $2" 
-  set -x
   if [[ -h $2 ]]; then
     echo "$2 is a symbolic link"
     unlink $2
@@ -20,7 +19,6 @@ function link_config {
     echo "$2 does not exist"
   fi
   ln -vs $1 $2
-  set +x
   echo
 }
 
