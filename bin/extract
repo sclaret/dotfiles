@@ -1,0 +1,22 @@
+#! /usr/bin/env bash
+
+#xz -dk --threads=0 -v *.xz
+#pigz -dkNv *.zip
+#pigz -dkNv *.gz
+
+#for f in *.tar.gz; do
+#  mkdir -p ${f%.*.*}
+#  tar -x --directory=${f%.*.*} -v -f $f
+#done
+
+f=$(basename $1)
+p="^.*.tar.xz$"
+if [[ $1 =~ $p ]]; then
+  echo "Compression detected in $f, decompressing:"
+  tar -xvf $1
+  echo "done"
+else
+  echo "No compression detected in $f."
+fi
+
+

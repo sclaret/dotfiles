@@ -1,0 +1,29 @@
+#! /usr/bin/env bash
+
+# download https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.5.6.tar.xz
+
+#while true; do
+#  wget --compression=gzip \
+#       --server-response \
+#       --continue \
+#       --tries=0 \
+#       --wait=15 \
+#       --timeout=120 $1
+
+
+#  curl -v \
+#       --remote-name \
+#       --location \
+#       --continue-at - \
+#       --compressed \
+#       --fail $1
+
+#  e=$?
+#  if (($e == 0)); then
+#    echo "Finished"
+#    break
+#  else
+#    echo "curl error code $e, retrying in 5 seconds."
+#    sleep 5
+#  fi
+#done
