@@ -1,0 +1,15 @@
+#! /usr/bin/env bash
+
+cd ~
+
+set -x
+
+# snapshot
+
+rm -rf .DS_Store
+rm -rf .bash_history .bash_sessions
+rm -rf .lesshst
+rm -rf .tldrc
+rm -rf .viminfo
+
+set +x
