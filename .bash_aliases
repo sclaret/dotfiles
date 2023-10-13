@@ -17,7 +17,6 @@ alias D="cd ~/Downloads"
 alias v="vim"
 alias e="emacs -nw"
 
-
 ####################
 # COMMANDS         #
 ####################
@@ -36,6 +35,13 @@ alias ssh="ssh -F ~/.config/ssh/config"
 #alias tl="dmesg -w"
 #alias tl="cd /var/log; tail -f *.log"
 #alias tl="logread -f"
+
+
+######################
+# COMPOUND COMMANDS  #
+######################
+
+alias dus="du -sh * | sort -h"
 
 
 ######################

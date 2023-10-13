@@ -1,0 +1,16 @@
+#! /usr/bin/env bash
+
+set -x
+
+# snapshot
+
+cd ~/Library/Caches
+
+rm -rf Yarn
+rm -rf pip
+
+rm -rf JetBrains
+rm -rf rancher-desktop
+rm -rf ms-playwright
+
+set +x
