@@ -3,7 +3,6 @@ clear
 if [[ -n $PS1 ]]; then
 
   # INTERNAL SETUP
-
   function get_source_dir {
     _source_file=${BASH_SOURCE[1]}
     if [[ -h $_source_file ]]; then
@@ -22,9 +21,7 @@ if [[ -n $PS1 ]]; then
   export XDG_STATE_HOME="$HOME/.local/state"
   mkdir -p ${XDG_STATE_HOME}
 
-
   # TERMINAL WORKAROUNDS
-
   if [[ "${BASH_VERSINFO[0]}" -lt "5" ]]; then
     echo "Warning: this bash interpreter is old ($BASH_VERSION)"
   fi
@@ -33,29 +30,21 @@ if [[ -n $PS1 ]]; then
   # Turn it off to restore CTRL-s to search-forwards mapping:
   stty -ixon
 
-
   # DEFAULT APPS, APP CONFIG
   export PATH=$PATH:/usr/local/bin:$PATH
-
   export EDITOR="vim"
   #export EDITOR="emacs -nw"
   export PAGER="less"
   export HOMEBREW_NO_AUTO_UPDATE=1
 
-
   # PROMPTS
-
-  activate_prompt 5 
+  activate_prompt 5
 #   activate_completions
 
-
   # ENVIRONMENTS, RUNTIMES
-  
 #   activate_runtimes
 
-
   # OTHER
-
 #   activate_secondary_dotfiles $SECONDARY_DOTFILES_DIR
 
 fi
