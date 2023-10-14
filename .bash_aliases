@@ -52,15 +52,6 @@ alias brew="sudo -Hu brew brew"
 
 
 ####################
-# BACKUP           #
-####################
-
-alias cob="tmutil startbackup --block; tmutil latestbackup" #command-option-backup
-alias cos="tmutil localsnapshot" #command-option-snapshot
-alias col="tmutil listlocalsnapshots /Volumes/workspace" #command-option-list
-
-
-####################
 # GIT              #
 ####################
 
