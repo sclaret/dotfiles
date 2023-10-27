@@ -5,8 +5,8 @@ set -x
 function link_config {
   echo "Need a symbolic link pointing to"
   echo "source_file $1"
-  echo "from link_name $2" 
-  if [[ -h $2 ]]; then
+  echo "from link_name $2"
+  if [[ -L $2 ]]; then
     echo "$2 is a symbolic link"
     unlink $2
   elif [[ -f $2 ]]; then

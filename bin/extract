@@ -18,5 +18,3 @@ if [[ $1 =~ $p ]]; then
 else
   echo "No compression detected in $f."
 fi
-
-

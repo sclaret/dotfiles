@@ -5,7 +5,7 @@ if [[ -n $PS1 ]]; then
   # INTERNAL SETUP
   function get_source_dir {
     _source_file=${BASH_SOURCE[1]}
-    if [[ -h $_source_file ]]; then
+    if [[ -L $_source_file ]]; then
       _source_file=$(readlink $_source_file)
     fi
     dirname $_source_file
@@ -39,10 +39,10 @@ if [[ -n $PS1 ]]; then
 
   # PROMPTS
   activate_prompt 5
-#   activate_completions
+  #   activate_completions
 
   # ENVIRONMENTS, RUNTIMES
-#   activate_runtimes
+  #   activate_runtimes
 
   # OTHER
 #   activate_secondary_dotfiles $SECONDARY_DOTFILES_DIR
