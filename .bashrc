@@ -42,7 +42,7 @@ if [[ -n $PS1 ]]; then
   #   activate_completions
 
   # ENVIRONMENTS, RUNTIMES
-  #   activate_runtimes
+  activate_runtimes
 
   # OTHER
 #   activate_secondary_dotfiles $SECONDARY_DOTFILES_DIR
