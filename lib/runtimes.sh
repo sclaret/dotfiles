@@ -8,6 +8,8 @@ function activate_runtimes {
   # n
 
   # pyenv
+  eval "$(pyenv init -)"
+
 }
 
 # Known problem with node on macos
