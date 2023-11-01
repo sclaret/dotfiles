@@ -1,0 +1,9 @@
+#! /usr/bin/env bash
+# Usage: source reset_poetry
+
+if [ "$POETRY_ACTIVE" == "1" ]; then
+  exit
+fi
+poetry env remove --all
+poetry install
+poetry shell
