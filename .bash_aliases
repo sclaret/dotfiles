@@ -14,7 +14,7 @@ alias D="cd ~/Downloads"
 ####################
 
 alias v="vim"
-alias e="emacs -nw"
+#alias e="emacs -nw"
 
 ####################
 # COMMANDS         #
@@ -35,6 +35,8 @@ alias ssh="ssh -F ~/.config/ssh/config"
 #alias tl="cd /var/log; tail -f *.log"
 #alias tl="logread -f"
 
+alias e="gh copilot explain"
+
 ######################
 # COMPOUND COMMANDS  #
 ######################
@@ -50,6 +52,7 @@ alias brew="sudo -Hu brew brew"
 ####################
 # GIT              #
 ####################
+alias g="git"
 
 alias gs="git status"
 alias gl="git log"
