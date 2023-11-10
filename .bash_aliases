@@ -35,7 +35,7 @@ alias ssh="ssh -F ~/.config/ssh/config"
 #alias tl="cd /var/log; tail -f *.log"
 #alias tl="logread -f"
 
-alias s="gh copilot suggest"
+alias s="gh copilot suggest -t shell"
 alias e="gh copilot explain"
 
 ######################
