@@ -8,7 +8,7 @@ function activate_runtimes {
   # n
 
   # pyenv
-  eval "$(pyenv init -)"
+  [ -a "/usr/local/bin/pyenv" ] && eval "$(pyenv init -)"
 
 }
 
